@@ -1,0 +1,65 @@
+ASSGN: 3
+
+Create a VM (machine->new) of size 1024.
+Use existing virtual hard disk file.
+Add bento ubuntu
+CREATE
+
+
+Similarly create VM2 using same process
+
+Go to file>preferences>network>NAT network>ok
+
+Now select VM1 -> settings -> network-> NATnetwork
+
+Similarly do for VM2
+
+Start VM1
+Put login and password both : vagrant
+
+Type: 
+```$ sudo apt install net-tools
+$ sudo apt update```
+
+To know the IP address of VM1
+```$ ifconfig```
+
+Create a file.
+```Vi transfer.txt```
+(To create file)
+
+Click ```i``` to go into insert mode
+
+Type your message.
+
+To save :- 
+Esc 
+```:wq```
+
+In terminal: 
+```ls
+cat transfer.txt```
+
+In VM2: 
+Type the same login and password.
+
+To know ip of this VM2:
+```Ifconfig```
+Note the  inet 
+
+Go to devices and network of both VMs and select NAT network.
+
+In VM1:
+
+```Scp transfer.txt vagrant@(ip of VM2(inet)):/home/vagrant```
+
+Now with prompt to continue Type ```yes```.
+
+Now Type vm2 password that is ```vagrant ```
+
+Now file is transferred.
+
+In VM2:
+Press ```ls``` to see the new file
+And ```cat filename.txt```
+To see the content
