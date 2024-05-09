@@ -1,0 +1,49 @@
+Sure, let's break down the steps to accomplish this:
+
+1. **Install Google App Engine SDK**:
+   - Visit the Google App Engine website (https://cloud.google.com/appengine/docs/standard/python/download) and download the appropriate SDK for your operating system (Windows, macOS, or Linux).
+   - Follow the installation instructions provided for your operating system to install the SDK.
+
+2. **Launch GAE Launcher**:
+   - Once the SDK is installed, locate and open the GAE Launcher application.
+
+3. **Create a New Project**:
+   - In GAE Launcher, click on the "Create" button to start a new project.
+
+4. **Configure Project Settings**:
+   - Give your project a name and select the directory where you want to store your project files.
+
+5. **Select Application Language**:
+   - Choose the programming language for your application. For this assignment, you'll likely choose Python.
+
+6. **Create a New Application**:
+   - After configuring the project settings, click on the "Create" button to create a new application within your project.
+
+7. **Write Your Factorial Code**:
+   - Within your project directory, locate the file named `main.py` (or whatever file you specified as the main script).
+   - Open this file using a text editor or an IDE.
+   - Write Python code to calculate the factorial of a number. For example:
+     ```python
+     def factorial(n):
+         if n == 0:
+             return 1
+         else:
+             return n * factorial(n-1)
+
+     print("Factorial of 5:", factorial(5))
+     ```
+
+8. **Test Your Application Locally**:
+   - Save the changes to your `main.py` file.
+   - In GAE Launcher, click on the "Run" button to test your application locally.
+   - Verify that your factorial function works as expected by checking the console output.
+
+9. **Deploy Your Application to Google App Engine**:
+   - Once you're satisfied with your application's functionality, it's time to deploy it to Google App Engine.
+   - In GAE Launcher, click on the "Deploy" button.
+   - Follow the prompts to sign in to your Google account and deploy your application to GAE.
+
+10. **Access Your Deployed Application**:
+    - After deployment is successful, you can access your deployed factorial application using the URL provided by Google App Engine.
+
+That's it! You've successfully installed Google App Engine, created a factorial web application, tested it locally, and deployed it to Google App Engine.
