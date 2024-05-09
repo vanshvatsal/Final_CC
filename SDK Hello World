@@ -1,10 +1,51 @@
-from flask import Flask
+Sure, here are the steps to install Google App Engine (GAE) and launch a simple "Hello World" web application using GAE Launcher:
 
-app = Flask(__name__)
+1. **Download and Install Google App Engine SDK**:
+   - Visit the Google App Engine website (https://cloud.google.com/appengine/docs/standard/python/download) and download the appropriate SDK for your operating system (Windows, macOS, or Linux).
+   - Follow the installation instructions provided for your operating system to install the SDK.
 
-@app.route('/')
-def hello():
-    return 'Hello, World!'
+2. **Launch GAE Launcher**:
+   - Once the SDK is installed, locate and open the GAE Launcher application.
 
-if __name__ == '__main__':
-    app.run()
+3. **Create a New Project**:
+   - In GAE Launcher, click on the "Create" button to start a new project.
+
+4. **Configure Project Settings**:
+   - Give your project a name and select the directory where you want to store your project files.
+
+5. **Select Application Language**:
+   - Choose the programming language for your application. For this assignment, you'll likely choose Python.
+
+6. **Create a New Application**:
+   - After configuring the project settings, click on the "Create" button to create a new application within your project.
+
+7. **Write Your "Hello World" Code**:
+   - Within your project directory, locate the file named `main.py` (or whatever file you specified as the main script).
+   - Open this file using a text editor or an IDE.
+   - Write a simple Python code to create a "Hello World" web application. For example:
+     ```python
+     from flask import Flask
+     app = Flask(__name__)
+
+     @app.route('/')
+     def hello():
+         return 'Hello, World!'
+
+     if __name__ == '__main__':
+         app.run()
+     ```
+
+8. **Test Your Application Locally**:
+   - Save the changes to your `main.py` file.
+   - In GAE Launcher, click on the "Run" button to test your application locally.
+   - Open a web browser and navigate to `http://localhost:8080` to see your "Hello World" message.
+
+9. **Deploy Your Application to Google App Engine**:
+   - Once you're satisfied with your application's functionality, it's time to deploy it to Google App Engine.
+   - In GAE Launcher, click on the "Deploy" button.
+   - Follow the prompts to sign in to your Google account and deploy your application to GAE.
+
+10. **Access Your Deployed Application**:
+    - After deployment is successful, you can access your deployed "Hello World" application using the URL provided by Google App Engine.
+
+That's it! You've successfully installed Google App Engine, created a simple "Hello World" web application, tested it locally, and deployed it to Google App Engine.
